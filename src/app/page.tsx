@@ -3,6 +3,9 @@ import Sidebar from '@/components/home/Sidebar';
 import styles from './page.module.css';
 import { getPosts } from '@/lib/get-posts';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default async function Home() {
     const posts = await getPosts();
 
